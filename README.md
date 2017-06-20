@@ -37,9 +37,9 @@ If you are not planning to install the system and directly use, start with **ste
 1.1 or: https://www.wanzul.net/billplz/ecwid
 2. Input the required details (**API Secret Key, X Signature Key & Collection ID**)
 3. Take note the **API Login ID, Transaction Key, MD5 Hash Value, Transaction Type & Endpoint URL**
-4. Login to http://www.ecwid.com >> Settings >> Payment >> See Complete List >> Authorize.net SIM
-5. Click on the Account Settings
-6. Key in the information the have been noted on step (3)
+4. Login to http://www.ecwid.com >> **Settings** >> **Payment** >> **See Complete List** >> **Authorize.net SIM**
+5. Click on the **Account Settings**
+6. Key in the information the have been noted on step **(3)**
 7. Save
 
 # Needs customization?
