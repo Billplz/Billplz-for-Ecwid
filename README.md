@@ -1,6 +1,7 @@
 # Billplz for Ecwid
 
 * Accept Payment using Billplz for Ecwid
+* What is Ecwid? Go to: www.ecwid.com
 * Last Update: 18 June 2017
 
 # Minimum System Requirements
