@@ -16,7 +16,7 @@
 3. Configure **config.php**. Make sure website URL is end with thrailing slash **"/"**
 4. Done!
 
-* **Note: You can use the ready-made system at: https://www.wanzul.net/billplz/ecwid**
+* **Note: You can use the ready-made system at: https://www.wanzul.net/billplz/ecwid. Go to How to configure part directly**
 
 # The Payment Flow
 
@@ -29,6 +29,8 @@
 Behind the scene: The system will send callback signal to the merchant Ecwid site
 
 # How to configure?
+
+If you are not planning to install the system and directly use, start with **step 1.1**
 
 1. Access to the installated system folder. <br>
 1.1 or: https://www.wanzul.net/billplz/ecwid
@@ -47,6 +49,15 @@ You can edit specific file according to the categorized pattern.
   * Models Defines the sql query to MySQL
   * Views: Output to the end user, JavaScript, and Styling
   * Includes: Defines all required files
+  
+# Cron Jobs
+
+After several month of usage, the database usage may grow bigger and bigger. You can clean the database while deleting a Bills created more than 3 days with Unpaid status.
+
+```
+wget --quiet -O /dev/null https://<Your System URL>/index.php?controller=deletebill
+```
+You may set it to run every 1 month or every 1 week. Otherwise you can access the URL periodically using web-browser
 
 # Other
 
