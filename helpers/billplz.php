@@ -104,7 +104,7 @@ if (!class_exists('Billplz')) {
         }
 
         public static function throwException($message) {
-            throw new Exception($message);
+            throw new \Exception($message);
         }
 
         public static function getCallbackData($signkey = '') {
