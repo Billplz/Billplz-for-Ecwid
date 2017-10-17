@@ -1,5 +1,4 @@
 <?php
-
 namespace Helpers\xfphash;
 
 /*
@@ -8,33 +7,53 @@ namespace Helpers\xfphash;
  * 2.http://www.authorize.net/support/SIM_guide.pdf
  */
 
-class Verifier {
+class Verifier
+{
 
     private $status_match = false;
     private $post_data;
 
     const POST_ARRAY = ['x_description', 'x_login', 'x_amount', 'x_currency_code', 'x_version', 'x_line_item', 'x_email', 'x_fp_sequence', 'x_fp_timestamp', 'x_fp_hash', 'x_invoice_num', 'x_first_name', 'x_last_name', 'x_address', 'x_city', 'x_state', 'x_zip', 'x_country', 'x_phone', 'x_cust_id', 'x_relay_response', 'x_relay_url', 'x_show_form', 'x_method'];
 
-    function __construct() {
+    function __construct()
+    {
 
         foreach (self::POST_ARRAY as $value) {
 
             if (isset($_POST[$value])) {
                 $this->post_data[$value] = $_POST[$value];
             } else {
-                exit('No ' . $value);
+                if ($value === 'x_first_name') {
+                    $this->post_data[$value] = $_POST['x_email'];
+                } elseif ($value === 'x_last_name') {
+                    $this->post_data[$value] = ' ';
+                } elseif ($value === 'x_address') {
+                    $this->post_data[$value] = 'No Address';
+                } elseif ($value === 'x_city') {
+                    $this->post_data[$value] = 'No City';
+                } elseif ($value === 'x_state') {
+                    $this->post_data[$value] = 'No State';
+                } elseif ($value === 'x_zip') {
+                    $this->post_data[$value] = 'No Zip';
+                } elseif ($value === 'x_country') {
+                    $this->post_data[$value] = 'No Country';
+                } else {
+                    exit('No ' . $value);
+                }
             }
         }
     }
-    
-    private function getTransactionKey(){
+
+    private function getTransactionKey()
+    {
         global $db;
         $transaction_key = $db->get_transaction_key($this->post_data['x_login']);
         return $transaction_key;
     }
 
-    public function getStatusMatch() {
-        
+    public function getStatusMatch()
+    {
+
         $transaction_key = $this->getTransactionKey();
         $preparedString = $this->post_data['x_login'] . '^' . $this->post_data['x_fp_sequence'] . '^' . $this->post_data['x_fp_timestamp'] . '^' . $this->post_data['x_amount'] . '^' . $this->post_data['x_currency_code'];
         $generatedHash = hash_hmac('md5', $preparedString, $transaction_key); //Nilai Ketiga => Transaction Key
@@ -45,14 +64,15 @@ class Verifier {
         return false;
     }
 
-    public function getPostData() {
+    public function getPostData()
+    {
         return $this->post_data;
     }
-    
-    public function getUserData() {
+
+    public function getUserData()
+    {
         global $db;
         $user_info = $db->get_user_info($this->post_data['x_login']);
         return $user_info;
     }
-
 }
