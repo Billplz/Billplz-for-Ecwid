@@ -17,8 +17,6 @@
 3. Configure **config.php**. Make sure website URL is end with thrailing slash **"/"**
 4. Done!
 
-* **Note: You can use the ready-made system at: https://www.wanzul.net/billplz/ecwid. Go to How to configure part directly**
-
 # The Payment Flow
 
 1. Buyer will make an order on merchant Ecwid site.
@@ -33,8 +31,7 @@ Behind the scene: The system will send callback signal to the merchant Ecwid sit
 
 If you are not planning to install the system and directly use, start with **step 1.1**
 
-1. Access to the installated system folder. <br>
-1.1 or: https://www.wanzul.net/billplz/ecwid
+1. Access to the installated system folder.
 2. Input the required details (**API Secret Key, X Signature Key & Collection ID**)
 3. Take note the **API Login ID, Transaction Key, MD5 Hash Value, Transaction Type & Endpoint URL**
 4. Login to http://www.ecwid.com >> **Settings** >> **Payment** >> **See Complete List** >> **Authorize.net SIM**
