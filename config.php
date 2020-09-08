@@ -6,5 +6,5 @@ $config = [
     'db_prefix' => 'bze_', //replace with Database Prefix
     'db_username' => '', //replace with Database Username
     'db_password' => '', //replace with Database Password
-    'website_url' => 'https://www.wanzul.net/billplz/ecwid/' //must end with slash "/"
+    'website_url' => 'https://www.yourdomain.com/ecwid/' //must end with slash "/"
 ];

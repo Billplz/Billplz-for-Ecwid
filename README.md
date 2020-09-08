@@ -1,4 +1,5 @@
 # Billplz for Ecwid
+*This project is no longer supported.*
 
 * Accept Payment using Billplz for Ecwid
 * What is Ecwid? Go to: www.ecwid.com
@@ -56,7 +57,3 @@ After several month of usage, the database usage may grow bigger and bigger. You
 wget --quiet -O /dev/null https://<Your System URL>/index.php?controller=deletebill
 ```
 You may set it to run every 1 month or every 1 week. Otherwise you can access the URL periodically using web-browser
-
-# Other
-
-Please open an issue or email to wan@wanzul-hosting.com

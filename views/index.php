@@ -23,14 +23,14 @@
                     <div class="jumbotron hero-nature carousel-hero">
                         <h1 class="hero-title">Billplz for Ecwid</h1>
                         <p class="hero-subtitle">Accept Payment using Billplz for Ecwid</p>
-                        <p><a class="btn btn-primary btn-lg hero-button" role="button" href="http://fb.com/billplzplugin">Learn more</a></p>
+                        <p><a class="btn btn-primary btn-lg hero-button" role="button" href="http://fb.com/">Learn more</a></p>
                     </div>
                 </div>
                 <div class="item">
                     <div class="jumbotron hero-technology carousel-hero">
-                        <h1 class="hero-title">Maintained by Billplz Plugin/Module/Extension</h1>
-                        <p class="hero-subtitle">This project is developed and maintained by Billplz Plugin/Modle/Extension. Any inquiry can be made to our Facebook page!</p>
-                        <p><a class="btn btn-primary btn-lg hero-button" role="button" href="http://fb.com/billplzplugin">Learn more</a></p>
+                        <h1 class="hero-title">Lorem Ipsum</h1>
+                        <p class="hero-subtitle">Description here.</p>
+                        <p><a class="btn btn-primary btn-lg hero-button" role="button" href="http://fb.com/">Learn more</a></p>
                     </div>
                 </div>
             </div>
@@ -86,25 +86,25 @@
             <div class="row">
                 <div class="col-md-4 col-sm-6 footer-navigation">
                     <h3><a href="#">Billplz <span>Plugin/Module/Extension </span></a></h3>
-                    <p class="links"><strong> </strong><a href="http://wanzul.net/donate">Make A Donation!</a><strong> </strong></p>
-                    <p class="company-name">Wanzul Hosting Enterprise: PC0012291-H</p>
+                    <p class="links"><strong> </strong><a href="http://yourdomain.com/">Make A Donation!</a><strong> </strong></p>
+                    <p class="company-name">Company Name: Registration Number</p>
                 </div>
                 <div class="col-md-4 col-sm-6 footer-contacts">
                     <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
-                        <p><span class="new-line-span">Bayan Lepas</span> Penang, Malaysia</p>
+                        <p><span class="new-line-span">City</span> State, Country</p>
                     </div>
                     <div><i class="fa fa-phone footer-contacts-icon"></i>
-                        <p class="footer-center-info email text-left"> +6014 - 535 6443</p>
+                        <p class="footer-center-info email text-left"> +6014 - 123 4567</p>
                     </div>
                     <div><i class="fa fa-envelope footer-contacts-icon"></i>
-                        <p> <a href="#" target="_blank">wan@wanzul-hosting.com</a></p>
+                        <p> <a href="#" target="_blank">your@email.com</a></p>
                     </div>
                 </div>
                 <div class="clearfix visible-sm-block"></div>
                 <div class="col-md-4 footer-about">
                     <h4>About the company</h4>
-                    <p>We dedicated to help Malaysian's to start an online business! Tell your friends and start doing online business now! </p>
-                    <div class="social-links social-icons"><a href="http://fb.com/billplzplugin"><i class="fa fa-facebook"></i></a><a href="http://github.com/wzul"><i class="fa fa-github"></i></a></div>
+                    <p>Lorem ipsum dolor sit amet. </p>
+                    <div class="social-links social-icons"><a href="http://fb.com/"><i class="fa fa-facebook"></i></a><a href="http://github.com/"><i class="fa fa-github"></i></a></div>
                 </div>
             </div>
         </footer>
